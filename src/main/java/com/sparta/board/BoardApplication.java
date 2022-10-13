@@ -1,7 +1,5 @@
 package com.sparta.board;
 
-import com.sparta.board.dto.BoardRequestDto;
-import com.sparta.board.entity.Board;
 import com.sparta.board.repository.BoardRepository;
 import com.sparta.board.service.BoardService;
 import org.springframework.boot.CommandLineRunner;
@@ -9,8 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-
-import java.util.List;
 
 @EnableJpaAuditing
 @SpringBootApplication

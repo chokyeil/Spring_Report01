@@ -1,25 +1,25 @@
-package com.sparta.board.dto;
+package com.sparta.board.dto.response;
 
 import com.sparta.board.entity.Board;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @NoArgsConstructor
 @Getter
-public class BoardRequestDto {
+public class BoardResponseDto {
+    private Long id;
     private String title;
     private String writer;
     private String password;
     private String desc;
-//    private LocalDateTime createdAt;
 
-    public BoardRequestDto(Board board){
+    // 전체 조회를 위한 생성자
+    public BoardResponseDto(Board board){
+        this.id = board.getId();
         this.title = board.getTitle();
         this.writer = board.getWriter();
         this.password = board.getPassword();
         this.desc = board.getDesc();
-//        this.createdAt = board.get
     }
+
 }

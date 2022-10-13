@@ -1,6 +1,7 @@
 package com.sparta.board.entity;
 
-import com.sparta.board.dto.BoardRequestDto;
+import com.sparta.board.dto.request.BoardRequestDto;
+import com.sparta.board.util.Timestamped;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -9,9 +10,9 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Board extends Timestamped{
+public class Board extends Timestamped {
 
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
@@ -27,7 +28,7 @@ public class Board extends Timestamped{
     @Column(nullable = false)
     private String desc;
 
-    public Board(String title, String writer, String date, String password, String desc){
+    public Board(String title, String writer, String password, String desc){
         this.title = title;
         this.writer = writer;
         this.password = password;

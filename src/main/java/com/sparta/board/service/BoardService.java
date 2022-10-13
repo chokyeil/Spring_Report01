@@ -1,9 +1,9 @@
 package com.sparta.board.service;
 
-import com.sparta.board.dto.BoardListResponseDto;
-import com.sparta.board.dto.BoardPwCheckRequestDto;
-import com.sparta.board.dto.BoardRequestDto;
-import com.sparta.board.dto.BoardResponseDto;
+import com.sparta.board.dto.response.BoardListResponseDto;
+import com.sparta.board.dto.request.BoardPwCheckRequestDto;
+import com.sparta.board.dto.request.BoardRequestDto;
+import com.sparta.board.dto.response.BoardResponseDto;
 import com.sparta.board.entity.Board;
 import com.sparta.board.repository.BoardRepository;
 import lombok.RequiredArgsConstructor;
